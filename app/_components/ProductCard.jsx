@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col justify-between transform hover:scale-105 transition-transform duration-300 ease-in-out">
+    <div className="border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg cursor-pointer h-full flex flex-col justify-between transform hover:scale-105 transition-transform duration-300 ease-in-out">
       <div
         onClick={() => router.push(`/products/${product.id}/product-details`)}
         className="flex flex-col items-center h-full"
