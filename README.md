@@ -21,7 +21,7 @@ Clone the Repository
 Open your terminal and run the following command to clone the repository:
 
 
-git clone https://github.com/Shubham06102003/ecommerce-web-app.git
+git clone https://github.com/Shubham06102003/e-commerce.git
 Navigate to the Project Directory
 
 Change to the directory where you cloned the repository:
