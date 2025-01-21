@@ -19,7 +19,7 @@ const CartItemView = ({ item }) => {
   };
 
   return (
-    <div className="flex items-center justify-between py-4 border-b border-gray-200">
+    <div className="flex items-center justify-between py-4 border-b border-gray-200 dark:border-gray-700">
       {/* Left Section: Product Image and Title */}
       <div className="flex items-center space-x-4 w-1/3">
         <div className="relative w-16 h-16">
@@ -31,29 +31,29 @@ const CartItemView = ({ item }) => {
             className="object-cover rounded"
           />
         </div>
-        <div className="text-sm">
+        <div className="text-sm text-gray-800 dark:text-gray-300">
           <p className="font-semibold">{item.product.title}</p>
         </div>
       </div>
 
       {/* Middle Section: Price and Quantity */}
       <div className="flex items-center justify-center space-x-4 w-1/3">
-        <div className="text-xl font-semibold">
+        <div className="text-xl font-semibold text-gray-800 dark:text-gray-300">
           ${(item.product.price * item.quantity).toFixed(2)}
         </div>
         <div className="flex items-center space-x-2">
           <button
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"
             onClick={() => handleQuantityChange(item.quantity - 1)}
           >
-            <span className="text-lg font-semibold text-gray-800">-</span>
+            <span className="text-lg font-semibold text-gray-800 dark:text-gray-100">-</span>
           </button>
-          <span className="text-lg">{item.quantity}</span>
+          <span className="text-lg text-gray-800 dark:text-gray-300">{item.quantity}</span>
           <button
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"
             onClick={() => handleQuantityChange(item.quantity + 1)}
           >
-            <span className="text-lg font-semibold text-gray-800">+</span>
+            <span className="text-lg font-semibold text-gray-800 dark:text-gray-100">+</span>
           </button>
         </div>
       </div>
@@ -61,7 +61,7 @@ const CartItemView = ({ item }) => {
       {/* Right Section: Remove Button */}
       <div className="w-1/3 text-right">
         <button
-          className="p-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition duration-300"
+          className="p-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition duration-300 dark:bg-red-600 dark:hover:bg-red-500"
           onClick={handleRemoveClick}
         >
           <span className="text-lg">🗑️</span>

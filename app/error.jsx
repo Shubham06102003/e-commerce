@@ -1,6 +1,5 @@
 'use client'; // Error boundaries must be Client Components
 
-import { Box, Button, Typography } from '@mui/material';
 import { useEffect } from 'react';
 
 const Error = ({ error, reset }) => {
@@ -10,10 +9,10 @@ const Error = ({ error, reset }) => {
   }, [error]);
 
   return (
-    <Box>
-      <Typography>Something went wrong!</Typography>
-      <Button onClick={() => reset()}>Try again</Button>
-    </Box>
+    <div className="error-container">
+      <p className="error-message">Something went wrong!</p>
+      <button className="retry-button" onClick={() => reset()}>Try again</button>
+    </div>
   );
 };
 

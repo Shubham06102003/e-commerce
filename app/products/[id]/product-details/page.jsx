@@ -43,7 +43,7 @@ const ProductDetailsPage = async ({ params }) => {
   const ratingValue = product.rating?.rate || 0; // Safely access rate from the rating object
 
   return (
-    <div className="mx-auto p-4 md:p-8 w-full h-screen">
+    <div className="mt-[-70px] mx-auto p-4 md:p-8 w-full h-screen bg-white dark:bg-gray-800">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Product Image and Info */}
         <div className="flex justify-center items-center">
@@ -56,21 +56,21 @@ const ProductDetailsPage = async ({ params }) => {
           </div>
         </div>
         <div>
-          <h1 className="text-3xl font-semibold text-gray-800 mb-4">{product.title}</h1>
-          <p className="text-xl font-bold text-gray-700 mb-4">${product.price}</p>
+          <h1 className="text-3xl font-semibold text-gray-800 dark:text-white mb-4">{product.title}</h1>
+          <p className="text-xl font-bold text-gray-700 dark:text-gray-300 mb-4">${product.price}</p>
 
           {/* Product Category */}
-          <p className="text-sm font-medium text-gray-600 mb-2">
+          <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
             <span className="font-semibold">Category:</span> {product.category}
           </p>
 
           {/* Product Rating */}
-          <p className={`text-lg font-semibold mb-6 ${getRatingColor(ratingValue)}`}>
+          <p className={`text-lg font-semibold mb-6 ${getRatingColor(ratingValue)} dark:text-gray-300`}>
             <span className="font-medium">Rating:</span> {ratingValue} / 5
           </p>
 
           {/* Product Description */}
-          <p className="text-gray-600 mb-6">{product.description}</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">{product.description}</p>
 
           <div className="flex justify-between items-center">
             <AddToCartButton product={product} /> {/* Use the AddToCartButton */}

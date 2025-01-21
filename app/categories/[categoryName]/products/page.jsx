@@ -28,9 +28,9 @@ const CategoryProductsPage = async ({ params }) => {
   const displacedCategoryName = decodeCategoryName(unslugify(categoryName));
 
   return (
-    <div className="p-4">
+    <div className="mt-[-70px] p-4 dark:bg-gray-900 dark:text-white">
       {/* Heading */}
-      <h2 className="text-3xl font-bold mb-6">{displacedCategoryName} Products</h2>
+      <h2 className="text-3xl font-bold mt-2 mb-6 dark:text-gray-200">{displacedCategoryName} Products</h2>
 
       {/* Category Products Component */}
       <CategoryProducts categoryName={categoryName} />

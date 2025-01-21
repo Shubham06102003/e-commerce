@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useCart } from '../context/CartContext';
 import CartItemView from './CartItem';
@@ -9,7 +9,7 @@ const ShoppingCartList = () => {
   return (
     <div>
       {cartItems.length === 0 ? (
-        <p className="text-center text-lg font-semibold text-gray-500">
+        <p className="text-center text-lg font-semibold text-gray-500 dark:text-gray-300">
           Your cart is empty
         </p>
       ) : (

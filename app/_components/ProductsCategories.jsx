@@ -13,7 +13,7 @@ const ProductsCategories = async () => {
             <NextLink
               key={category}
               href={`/categories/${slugify(category)}/products`}
-              className={`text-lg font-medium text-black hover:text-blue-400 transition-colors whitespace-nowrap ${
+              className={`text-lg font-medium text-black hover:text-blue-400 transition-colors whitespace-nowrap dark:text-white dark:hover:text-blue-300 ${
                 index === 0 ? 'ml-0' : ''
               }`}
             >

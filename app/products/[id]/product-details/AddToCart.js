@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useCart } from '../../../context/CartContext';
@@ -24,8 +23,8 @@ const AddToCartButton = ({ product }) => {
       onClick={addedToCart ? handleGoToCart : handleAddToCart}
       className={`px-6 py-3 font-semibold rounded-lg transition ${
         addedToCart
-          ? 'bg-green-600 text-white hover:bg-green-700'
-          : 'bg-blue-600 text-white hover:bg-blue-700'
+          ? 'bg-green-600 text-white hover:bg-green-700 dark:bg-green-500 dark:text-white dark:hover:bg-green-600'
+          : 'bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:text-white dark:hover:bg-blue-700'
       }`}
     >
       {addedToCart ? 'Go to Cart' : 'Add to Cart'}

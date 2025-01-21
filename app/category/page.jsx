@@ -38,7 +38,7 @@ const CategoryPage = () => {
   }, [selectedCategory]);
 
   return (
-    <div className="container mx-auto p-4 mt-[-99px]">
+    <div className="container mx-auto p-4 mt-[-70px] dark:bg-gray-900 dark:text-white">
       <h1 className="text-2xl font-bold mb-4">Categories</h1>
 
       {/* Display categories */}
@@ -50,7 +50,7 @@ const CategoryPage = () => {
             className={`text-lg font-medium transition-colors ${
               selectedCategory === category
                 ? 'text-blue-500 font-bold'
-                : 'text-blue-500 hover:text-slate-600'
+                : 'text-blue-500 hover:text-slate-600 dark:hover:text-blue-300'
             }`}
           >
             {capitalizeFirstLetter(category)}

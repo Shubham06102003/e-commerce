@@ -1,23 +1,12 @@
 import Link from 'next/link';
-import { Box, Typography, Link as MuiLink } from '@mui/material';
 
 const NotFound = () => {
   return (
-    <Box>
-      <Typography variant="h2" gutterBottom>
-        Not Found
-      </Typography>
-      <Typography paragraph>Could not find requested resource</Typography>
-      <MuiLink
-        component={Link}
-        href="/"
-        sx={{
-          fontFamily: 'var(--font-roboto)',
-        }}
-      >
-        Go Home
-      </MuiLink>
-    </Box>
+    <div className="not-found-container">
+      <h2 className="not-found-heading">Not Found</h2>
+      <p className="not-found-description">Could not find requested resource</p>
+      <Link href="/" className="go-home-link">Go Home</Link>
+    </div>
   );
 };
 
