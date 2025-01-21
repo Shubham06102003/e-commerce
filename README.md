@@ -20,45 +20,30 @@ Follow these steps to set up and run the application locally.
 Clone the Repository
 Open your terminal and run the following command to clone the repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/Shubham06102003/ecommerce-web-app.git
 Navigate to the Project Directory
-Change to the directory where you cloned the repository:
 
-bash
-Copy
-Edit
+Change to the directory where you cloned the repository:
 cd ecommerce-web-app
+
 Install Dependencies
 Run the following command to install the required dependencies:
-
-bash
-Copy
-Edit
 npm install
 Or, if you're using yarn:
-
-bash
-Copy
-Edit
 yarn install
+
+
 Start the Development Server
 Run the following command to start the Next.js development server:
-
-bash
-Copy
-Edit
 npm run dev
 Or, if you're using yarn:
-
-bash
-Copy
-Edit
 yarn dev
+
+
 Access the Application
 Open your browser and navigate to http://localhost:3000 to see the application in action.
+
 
 Features to Implement
 User Authentication: Implement login/signup functionality.
